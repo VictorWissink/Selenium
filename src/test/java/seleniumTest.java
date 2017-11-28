@@ -1,6 +1,6 @@
 
 
-import com.websystique.springboot.SpringBootCRUDApp;
+import nl.ovsoftware.oldenzaal.testprototypes.selenium.SpringBootCRUDApp;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.*;
@@ -11,7 +11,6 @@ import org.springframework.boot.test.context.SpringBootContextLoader;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(
@@ -59,7 +58,7 @@ public class seleniumTest {
                 salaryInput.sendKeys(salary + "");
 
                 WebElement addButton = d.findElement(By.id("submit"));
-                return !addButton.isEnabled();
+                return addButton.isEnabled();
             }
         });
         WebElement addButton = driver.findElement(By.id("submit"));
