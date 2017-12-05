@@ -1,3 +1,6 @@
+Used as the base project for this implementation: http://websystique.com/spring-boot/spring-boot-angularjs-spring-data-jpa-crud-app-example/
+
+
 # Selenium
 
 
